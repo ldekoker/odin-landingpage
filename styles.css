@@ -1,4 +1,6 @@
-body {
+html, body {
+    font-family: sans-serif;
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -11,11 +13,9 @@ a {
 }
 
 .header, .header ul {
-    display: flex;
-}
+    background-color: #7e8667;
 
-.main {
-    flex-grow: 1;
+    display: flex;
 }
 
 ul {
@@ -24,7 +24,46 @@ ul {
     margin: 0;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.section {
+    display: flex;
+
+    flex: 0 0 400px;
+    /* height: 1000px; */
+}
+
+.front {
+    background-color: #d3a84e;
+}
+
+.information {
+    flex-direction: column;
+}
+
+.pibble_boxes {
+    display:flex;
+}
+
+.quote {
+    background-color: #ffe9b9;
+}
+
+.blue-box {
+    background-color: 405A6E;
+
+    display:flex;
+}
+
 .footer {
+    background-color: #1F2B5A;
+    color: white;
+
     display:flex;
     justify-content: center;
     align-items: center;
