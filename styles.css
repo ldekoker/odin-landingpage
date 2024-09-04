@@ -1,3 +1,4 @@
+/* General Rules */
 html, body {
     font-family: sans-serif;
 
@@ -12,6 +13,8 @@ a {
     color: black;
 }
 
+/* Header rules */
+
 .header, .header ul {
     background-color: #7e8667;
 
@@ -24,6 +27,8 @@ ul {
     margin: 0;
 }
 
+/* Body rules */
+
 .main {
     display: flex;
     flex-direction: column;
@@ -34,13 +39,16 @@ ul {
 .section {
     display: flex;
 
-    flex: 0 0 400px;
-    /* height: 1000px; */
+    flex: 0 0 500px;
 }
+
+/* First screen */
 
 .front {
     background-color: #d3a84e;
 }
+
+/* Second screen */
 
 .information {
     flex-direction: column;
@@ -50,15 +58,21 @@ ul {
     display:flex;
 }
 
+/* Third Screen */
+
 .quote {
     background-color: #ffe9b9;
 }
+
+/* Fourth Screen */
 
 .blue-box {
     background-color: 405A6E;
 
     display:flex;
 }
+
+/* Footer rules */
 
 .footer {
     background-color: #1F2B5A;
