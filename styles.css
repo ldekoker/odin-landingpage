@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header, .header ul {
+    display: flex;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
