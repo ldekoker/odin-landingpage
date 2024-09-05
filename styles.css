@@ -4,7 +4,8 @@
 /* General Rules */
 :root {
     --font-main: 'Roboto', sans-serif;
-    --padding-sides: 12.5%;
+    --padding-sides: 15%;
+    --small-gap: 8px;
     --top-background-color: #d3a84e; 
     --quote-color: #ffe9b9;
     --box-color: #405A6E;
@@ -49,10 +50,11 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+    gap: 32px;
 }
 
 /* Sections */
-
 .front, .information, .quote-background, .call-to-action{
     flex: 0 0 300px;
     padding: 50px var(--padding-sides);
@@ -65,7 +67,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
 
     max-width: 100%;
 }
@@ -79,11 +81,21 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: var(--small-gap);
+}
+
+#left_front button {
+    padding: 8px 16px;
+
+    background-color: var(--box-color);
+    border: none;
+    color: white;
+    border-radius: 8px;
 }
 
 .main-pibble-img {
     max-width: 300px;
-    border-radius: 30px;;
+    border-radius: 30px;
 }
 
 /* Information */
@@ -96,11 +108,10 @@ ul {
 }
 
 .pibble_boxes {
-    align-self: stretch;
-
     display:flex;
     justify-content: center;
-    gap: 25px;
+    gap: var(--small-gap);
+    flex-wrap: wrap;
 }
 
 .pibble_box {
@@ -118,6 +129,7 @@ ul {
 
 .pibble_box p {
     text-align: center;
+    width: 225px;
 }
 
 /* Quote */
@@ -165,10 +177,20 @@ ul {
     gap: 6px;
 }
 
+.blue-box button {
+    padding: 8px 16px;
+
+    background-color: var(--box-color);
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+}
+
 /* Footer rules */
 .footer {
     background-color: var(--footer-color);
     color: white;
+    padding: 8px;
 
     display:flex;
     justify-content: center;
