@@ -16,6 +16,19 @@ a {
     color: black;
 }
 
+img {
+    align-self: center;
+}
+
+h1, h2, p {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
 /* Header rules */
 
 .header, .header ul {
@@ -50,12 +63,32 @@ ul {
 }
 
 .section {
+    padding: 50px;
+
     display: flex;
+    justify-content: space-around;
 
     flex: 0 0 500px;
 }
 
 /* First screen */
+.front {
+    gap: 20px;
+}
+
+
+#left_front {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: center;
+}
+
+.main-pibble-img {
+    height: auto;
+    max-width: 50%;
+}
 
 /* Second screen */
 
