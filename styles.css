@@ -4,7 +4,7 @@
 /* General Rules */
 :root {
     --font-main: 'Roboto', sans-serif;
-    --padding-sides: 50px;
+    --padding-sides: 12.5%;
     --top-background-color: #d3a84e; 
     --quote-color: #ffe9b9;
     --box-color: #405A6E;
@@ -19,6 +19,8 @@
 
 body {
     font-family: var(--font-main);
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -49,10 +51,16 @@ ul {
     margin: 0;
 }
 
+/* Sections */
+
+.front, .information, .quote-background, .call-to-action{
+    flex: 0 0 300px;
+    padding: 50px var(--padding-sides);
+}
+
 /* Front */
 .front {
     background-color: var(--top-background-color);
-    padding: 0 var(--padding-sides);
 
     display: flex;
     flex-wrap: wrap;
@@ -63,11 +71,19 @@ ul {
 }
 
 #left_front {
+    flex: 1;
+    min-width: 200px;
+    max-width: 350px;
+
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-
     justify-content: center;
+}
+
+.main-pibble-img {
+    max-width: 300px;
+    border-radius: 30px;;
 }
 
 /* Information */
