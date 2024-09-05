@@ -2,16 +2,20 @@
 1. Add content div so as to create uniform margins */
 
 /* General Rules */
-html, body {
-    padding: 0px;
-    margin: 0px;
+:root {
+    --font-main: sans-serif;
+    --padding-sides: 50px;
+    --top-background-color: #d3a84e; 
+}
 
-    font-family: sans-serif;
-
+* {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
 }
 
 a {
@@ -20,21 +24,16 @@ a {
 }
 
 img {
+    max-width: 100%;
     align-self: center;
 }
 
-h1, h2, p {
-    padding: 0px;
-    margin: 0px;
-}
-
-h2 {
-    font-size: 36px;
+h1, h2, h3, p {
+    padding: 0;
 }
 
 .content {
-    padding-left: 125px;
-    padding-right: 125px;
+    padding: 0 var(--padding-large);
 }
 
 /* Header rules */
@@ -43,11 +42,8 @@ h2 {
     display: flex;
 }
 
-.header, .front {
-    background-color: #d3a84e;
-}
-
 .header {
+    background-color: var(--top-background-color);
     padding-top: 12px;
 
     justify-content: space-around;
@@ -58,8 +54,6 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-
-    gap: 24px;
 }
 
 /* Body rules */
@@ -82,6 +76,8 @@ ul {
 
 /* First screen */
 .front {
+    background-color: var(--top-background-color);
+
     gap: 20px;
     justify-content: center;
 }
@@ -161,10 +157,23 @@ ul {
 
 .blue-box {
     background-color: #405A6E;
+    padding: 25px;
+    border-radius: 10px;
 
     align-self: center;
 
     display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bb_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
 }
 
 /* Footer rules */
