@@ -1,5 +1,8 @@
 /* General Rules */
 html, body {
+    padding: 0px;
+    margin: 0px;
+
     font-family: sans-serif;
 
     box-sizing: border-box;
@@ -16,15 +19,25 @@ a {
 /* Header rules */
 
 .header, .header ul {
-    background-color: #7e8667;
-
     display: flex;
+}
+
+.header, .front {
+    background-color: #d3a84e;
+}
+
+.header {
+
+    justify-content: space-around;
+    align-items: center;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+    gap: 24px;
 }
 
 /* Body rules */
@@ -43,10 +56,6 @@ ul {
 }
 
 /* First screen */
-
-.front {
-    background-color: #d3a84e;
-}
 
 /* Second screen */
 
