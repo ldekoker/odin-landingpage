@@ -66,14 +66,14 @@ ul {
     padding: 50px;
 
     display: flex;
-    justify-content: space-around;
 
-    flex: 0 0 500px;
+    flex: 0 0 400px;
 }
 
 /* First screen */
 .front {
     gap: 20px;
+    justify-content: center;
 }
 
 
@@ -94,14 +94,34 @@ ul {
 
 .information {
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    gap: 70px;
 }
 
 .pibble_boxes {
     align-self: stretch;
 
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
+}
+
+.pibble_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.pibble_box img {
+    border-radius: 25px;
+    height: 180px;
+    width: 180px;
+}
+
+.pibble_box p {
+    text-align: center;
 }
 
 /* Third Screen */
