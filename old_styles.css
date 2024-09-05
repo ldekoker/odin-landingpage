@@ -2,44 +2,17 @@
 1. Add content div so as to create uniform margins */
 
 /* General Rules */
-:root {
-    --font-main: 'Roboto', sans-serif;
-    --padding-sides: 50px;
-    --top-background-color: #d3a84e; 
-    --quote-color: #ffe9b9;
-    --box-color: #405A6E;
-    --footer-color: #1F2B5A;
-}
+/* Header rules */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: var(--font-main);
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-h1, h2, h3, p {
-    padding: 0;
-}
-
-/* Header */
 .header, .header ul {
     display: flex;
 }
 
 .header {
     background-color: var(--top-background-color);
-    padding: 12px var(--padding-sides) 0;
+    padding-top: 12px;
 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -49,30 +22,29 @@ ul {
     margin: 0;
 }
 
-/* Front */
-.front {
-    background-color: var(--top-background-color);
-    padding: 0 var(--padding-sides);
+/* Body rules */
 
+.main {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-
-    max-width: 100%;
-}
-
-#left_front {
-    display:flex;
     flex-direction: column;
-    align-items: flex-start;
 
-    justify-content: center;
+    flex: 1;
 }
 
-/* Information */
-.information {
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     display: flex;
+
+    flex: 0 0 400px;
+}
+
+/* First screen */
+
+/* Second screen */
+
+.information {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -104,14 +76,15 @@ ul {
     text-align: center;
 }
 
-/* Quote */
-.quote-background {
-    background-color: var(--quote-color);
+/* Third Screen */
 
-    display: flex;
+.section.quote {
+    background-color: #ffe9b9;
     flex-direction: column;
     justify-content: center;
 }
+
+
 .quote p {
     font-size: 36px;
     font-style: italic;
@@ -123,13 +96,13 @@ ul {
 }
 
 /* Fourth Screen */
+
 .call-to-action {
-    display: flex;
     justify-content: center;
 }
 
 .blue-box {
-    background-color: var(--box-color);
+    background-color: #405A6E;
     padding: 25px;
     border-radius: 10px;
 
@@ -150,8 +123,9 @@ ul {
 }
 
 /* Footer rules */
+
 .footer {
-    background-color: var(--footer-color);
+    background-color: #1F2B5A;
     color: white;
 
     display:flex;
