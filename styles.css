@@ -1,3 +1,6 @@
+/* Notes:
+1. Add content div so as to create uniform margins */
+
 /* General Rules */
 html, body {
     padding: 0px;
@@ -29,6 +32,11 @@ h2 {
     font-size: 36px;
 }
 
+.content {
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
 /* Header rules */
 
 .header, .header ul {
@@ -40,6 +48,7 @@ h2 {
 }
 
 .header {
+    padding-top: 12px;
 
     justify-content: space-around;
     align-items: center;
@@ -63,7 +72,8 @@ ul {
 }
 
 .section {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     display: flex;
 
@@ -126,14 +136,33 @@ ul {
 
 /* Third Screen */
 
-.quote {
+.section.quote {
     background-color: #ffe9b9;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote_name {
+    text-align: right;
+    font-weight: bold;
 }
 
 /* Fourth Screen */
 
+.call-to-action {
+    justify-content: center;
+}
+
 .blue-box {
-    background-color: 405A6E;
+    background-color: #405A6E;
+
+    align-self: center;
 
     display:flex;
 }
